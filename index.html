@@ -78,7 +78,17 @@ text-align: center;
 </style>
 <div class="text-16578133316969nqkcl-element text">
 <p>
-Você e algumas pessoas próximas de sua cidade<span id="address"style="color:#000000"></span> foram selecionadas para participar
+Você e algumas pessoas próximas de <span id="address" style="color:#000000;">Salvador</span> foram selecionadas para participar
+
+<!--INÍCIO DO SCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.city);
+}, "jsonp");
+</script>
+
+<!--FIM DO SCRIPT-->
 </p>
 </div>
 </div>
