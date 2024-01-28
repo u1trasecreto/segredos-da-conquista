@@ -78,7 +78,17 @@ text-align: center;
 </style>
 <div class="text-16578133316969nqkcl-element text">
 <p>
-Você e algumas pessoas próximas de&nbsp;<span style="color:#000000"><b><span class="md"></span></b></span>&nbsp;foram selecionadas para participar
+Você e algumas pessoas próximas de <span id="address" style="color:#000000;">Salvador</span> foram selecionadas para participar
+
+<!--INÍCIO DO SCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.city);
+}, "jsonp");
+</script>
+
+<!--FIM DO SCRIPT-->
 </p>
 </div>
 </div>
@@ -233,7 +243,14 @@ text-align: center;
 </style>
 <div class="description-16578141835486qxbNr-element ">
 <h3>
-<span class="xl"></span>&nbsp;pessoas assistindo agora...
+<div id="contador"></div>
+<script>
+  function atualizarContador() {
+    var contador = Math.floor(Math.random() * (875 - 450 + 1) + 550); // gera um número aleatório entre 250 e 275
+    document.getElementById("contador").innerHTML = contador + " pessoas assistindo agora...";
+  }
+  setInterval(atualizarContador, 5000); // atualiza a cada 5 segundos
+</script>
 </h3>
 </div>
 </div>
@@ -575,7 +592,7 @@ Responder
 Camila Silva
 </p>
 <p class="text-sm leading-4 pt-0.5">
-Feliiiz demais!!! Obrigada Márcio, achava que o Guia n ia funcionar pq já tinha feito de td pro meu namorado voltar, mas msmo assim quis tentar e olha agora parece que é nosso primeiro mês de namoro todo dia�&nbsp;​😍😍😍
+Feliiiz demais!!! Obrigada Márcio, achava que o Guia n ia funcionar pq já tinha feito de td pro meu namorado voltar, mas msmo assim quis tentar e olha agora parece que é nosso primeiro mês de namoro todo dia &nbsp;​😍😍😍
 </p>
 </div>
 </div>
